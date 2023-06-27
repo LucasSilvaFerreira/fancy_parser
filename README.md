@@ -15,7 +15,11 @@ __Example__
 
 ```python3
 # Case in the jupyter notebook
-!find .| grep bam  
+
+from  FancyParser import FancyParser
+!find .| grep bam 
+
+
 files = experiment  = FancyParser(files)
 
 experiment.show_df()
