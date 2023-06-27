@@ -17,10 +17,10 @@ __Example__
 # Case in the jupyter notebook
 
 from  FancyParser import FancyParser
-!find .| grep bam 
+files = !find .| grep bam   # inside a jupyter notebook /colab
 
 
-files = experiment  = FancyParser(files)
+experiment  = FancyParser(files)
 
 experiment.show_df()
 experiment.df['replicate'] =     experiment.add_col_parse('file_name', '-', 1,'.bam')
